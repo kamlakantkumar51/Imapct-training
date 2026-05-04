@@ -63,6 +63,15 @@ class Main {
         
         int min = (n1<n2)?(n1<n3 ? n1:n3):(n2<n3?n2:n3);
         System.out.println(min);
+
+        //WAP (MOTHER TOLD THAT GO THE MARKET AND TAKE 1 KG OF SUGAR AND 1/2 KG OF SALT AND COME BACK TO THE HOME ELSE COMEBACK TO HOME
+        boolean open = true;
+
+        String ans = open 
+            ? "Take 1kg of sugar + 1/2kg of salt and come back to home" 
+            : "come back to the home";
+
+        System.out.println(ans);
      
     }
 }
