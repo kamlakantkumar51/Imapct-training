@@ -33,6 +33,26 @@ class Main {
         //error : cant add boolean
         // System.out.println(true+false);
         // System.out.println(true + "false");
+
+        //increment - decrement operator
+        int n = 5;
+        //pre increment
+        System.out.println(n);
+        System.out.println(n++);
+        System.out.println(n);
+
+        //post increment
+        System.out.println(n);
+        System.out.println(++n);
+        System.out.println(n);
+
+        //pre decrement
+        System.out.println(n);
+        System.out.println(n--);
+        System.out.println(n);
+
+        //post decrement
+        System.out.println(n);
         
     }
 }
