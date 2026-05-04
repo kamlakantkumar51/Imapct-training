@@ -5,11 +5,7 @@ class Main {
         // System.out.print(2+'A');
         // System.out.println();
         // System.out.println(2+2.2);
-        
-
-
-
-
+        //REVISING THE CONCEPT OF VARIABLES AND DATA TYPE
 
         int a = 10;
         char b  = 'a';
@@ -34,7 +30,7 @@ class Main {
         // System.out.println(true+false);
         // System.out.println(true + "false");
 
-        //increment - decrement operator
+        //increment......decrement operator...
         int n = 5;
         //pre increment
         System.out.println(n);
@@ -53,6 +49,25 @@ class Main {
 
         //post decrement
         System.out.println(n);
+        System.out.println(--n);
+        System.out.println(n);
+
+
+        //WAP TO FIND THE MINIMUM OF THREE NUMBER BY USING CONDITIONAL OPERATOR
+        
+class Main {
+    public static void main(String[] args) {
+        int n1 = 4;
+        int n2 = 6;
+        int n3 = 8;
+        // if(n2 > n1 && n3 > n1){
+        //     System.out.println(n1);
+        // }
+        
+        int min = (n1<n2)?(n1<n3 ? n1:n3):(n2<n3?n2:n3);
+        System.out.println(min);
+    }
+}
         
     }
 }
