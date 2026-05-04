@@ -54,9 +54,6 @@ class Main {
 
 
         //WAP TO FIND THE MINIMUM OF THREE NUMBER BY USING CONDITIONAL OPERATOR
-        
-class Main {
-    public static void main(String[] args) {
         int n1 = 4;
         int n2 = 6;
         int n3 = 8;
@@ -66,8 +63,6 @@ class Main {
         
         int min = (n1<n2)?(n1<n3 ? n1:n3):(n2<n3?n2:n3);
         System.out.println(min);
-    }
-}
-        
+     
     }
 }
