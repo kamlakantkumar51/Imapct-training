@@ -1,21 +1,29 @@
 class Main {
-    public static void main(String[] args) {
-        int arr[] = new int[5];
-        arr[0] = 10;
-        arr[1] = 20;
-        arr[2] = 30;
-        arr[3] = 40;
-        arr[4] = 50;
-        
-        for(int i=0;i<arr.length;i++){
-            System.out.println(arr[i]+ "");
+    public static boolean linearSearch(int arr[], int key){
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == key){
+                return true;
+            }
         }
-        //wap to find the sum of all array element
-        
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {10, 20, 30, 40, 50};
+        for(int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
+        // wap to sum of all array element
         int sum = 0;
-        for(int i=0;i<arr.length;i++){
+        for(int i = 0; i < arr.length; i++){
             sum += arr[i];
         }
-        System.out.print("The sum of all array elment = "+sum);
+        System.out.println("The sum of all array element = " + sum);
+        // search element
+        if(linearSearch(arr, 40)){
+            System.out.println("element found");
+        } else {
+            System.out.println("element not found");
+        }
     }
 }
