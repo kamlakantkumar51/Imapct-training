@@ -1,4 +1,3 @@
-//transpose of an matrix
 class Main {
     public static void main(String args[]) {
         int matrix[][] = {
@@ -15,12 +14,29 @@ class Main {
                 matrix[j][i] = temp;
             }
         }
+        System.out.println("Transpose Matrix:");
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
+        }
+        System.out.println("\nRow sums:");
+        for (int i = 0; i < rows; i++) {
+            int rowSum = 0;
+            for (int j = 0; j < cols; j++) {
+                rowSum += matrix[i][j];
+            }
+            System.out.println("Row " + i + " = " + rowSum);
+        }
+        System.out.println("\nColumn sums:");
+        for (int j = 0; j < cols; j++) {
+            int colSum = 0;
+            for (int i = 0; i < rows; i++) {
+                colSum += matrix[i][j];
+            }
+            System.out.println("Column " + j + " = " + colSum);
         }
     }
 }
